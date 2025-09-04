@@ -5,7 +5,7 @@ import os
 import numpy as np
 import re
 # Download NLTK data
-nltk.download('vader_lexicon', quiet=True)
+#nltk.download('vader_lexicon', quiet=True)
 
 # Updated file paths for Streamlit Cloud
 model_path = 'best_model.pkl'
