@@ -1,3 +1,4 @@
+nltk.download('vader_lexicon', quiet=True)
 nltk.sentiment.vader
 SentimentIntensityAnalyzer
 networkx as nx
