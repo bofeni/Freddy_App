@@ -4,11 +4,6 @@ import pickle
 import os
 import numpy as np
 import re
-from nltk.sentiment import SentimentIntensityAnalyzer
-import networkx as nx
-import holidays
-import nltk
-
 # Download NLTK data
 nltk.download('vader_lexicon', quiet=True)
 
