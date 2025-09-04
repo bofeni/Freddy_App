@@ -3,29 +3,12 @@ import pandas as pd
 import pickle # Use pickle instead of joblib
 import os
 import numpy as np
-import nltk
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
-import holidays
-import networkx as nx
 import re
-
-# Download NLTK data if not already present
-try:
-    nltk.data.find('sentiment/vader_lexicon.zip')
-except LookupError:
-    nltk.download('vader_lexicon')
-
-try:
-    nltk.data.find('tokenizers/punkt')
-except LookupError:
-    nltk.download('punkt')
-
-
 # Load the saved model and preprocessors
-model_path = '/content/fraud_detection_model/best_model.pkl'
-scaler_path = '/content/fraud_detection_model/scaler.pkl'
-tfidf_path = '/content/fraud_detection_model/tfidf_vectorizer.pkl'
-features_path = '/content/fraud_detection_model/feature_columns.pkl'
+model_path = 'bofeni/Freddy_App/blob/main/best_model.pkl'
+scaler_path = 'bofeni/Freddy_App/blob/main/scaler.pkl'
+tfidf_path = 'bofeni/Freddy_App/blob/main/tfidf_vectorizer.pkl'
+features_path = 'bofeni/Freddy_App/blob/main/feature_columns.pkl'
 
 try:
     with open(model_path, 'rb') as f: # Use pickle for loading
