@@ -1,5 +1,8 @@
 nltk.sentiment.vader
 SentimentIntensityAnalyzer
+networkx as nx
+holidays
+nltk
 absl-py==1.4.0
 absolufy-imports==0.3.1
 accelerate==1.10.1
